@@ -113,7 +113,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: yarn dev
-          wait-on: 'http://localhost:3000'
+          wait-on: 'http://localhost:1006'
           cache-key: ${{ runner.os }}-modules-${{ secrets.CACHE_VERSION }}-${{ hashFiles('**/yarn.lock') }}s
           config-file: cypress.config.ts
           browser: ${{ matrix.browser }}
